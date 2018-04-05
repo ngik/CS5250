@@ -10,7 +10,7 @@ module_param(who, charp, S_IRUSR|S_IWUSR);
 
 static int hello_init(void)
 {
-	printk(KERN_ALERT "Hello, world %s\n", who);
+	printk(KERN_ALERT "Hello %s\n", who);
 	return 0;
 }
 
